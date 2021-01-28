@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("RPG Assistant.App.xaml", "App.xaml", typeof(global::RPG_Assistant.App))]
+[assembly: global::Xamarin.Forms.Xaml.XamlResourceIdAttribute("RPG_Assistant.App.xaml", "App.xaml", typeof(global::RPG_Assistant.App))]
 
 namespace RPG_Assistant {
     

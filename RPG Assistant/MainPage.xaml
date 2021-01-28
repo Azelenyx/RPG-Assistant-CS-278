@@ -3,22 +3,34 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPG_Assistant.MainPage">
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+    <AbsoluteLayout>
+        <Frame TranslationX="0" BackgroundColor="#2196F3" Padding="24" CornerRadius="0" ScaleY="10" WidthRequest="400" HasShadow="False">
+            <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Padding="32"/>-->
         </Frame>
-        <Label Text="Start developing now" FontSize="Title" Padding="30,10,30,10"/>
-        <Label Text="Make changes to your XAML file and save to see your UI update in the running app with XAML Hot Reload. Give it a try!" FontSize="16" Padding="30,0,30,0"/>
-        <Label FontSize="16" Padding="30,24,30,0">
-            <Label.FormattedText>
-                <FormattedString>
-                    <FormattedString.Spans>
-                        <Span Text="Learn more at "/>
-                        <Span Text="https://aka.ms/xamarin-quickstart" FontAttributes="Bold"/>
-                    </FormattedString.Spans>
-                </FormattedString>
-            </Label.FormattedText>
-        </Label>
-    </StackLayout>
+        <Label TranslationY="64" Text="Hello World!" FontSize="Title" Padding="30,10,30,10"/>
+
+        <Frame TranslationX="30" TranslationY="660" Padding="36" HasShadow="false">
+            <StackLayout>
+                <Button Text="Notes" Clicked="NotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="250" HorizontalOptions="Center" />
+                <Button Text="Stats" Clicked="StatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="250" HorizontalOptions="Center" />
+
+            </StackLayout>
+           
+            <!--<Button Text="Stats" Clicked="StatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="250" HorizontalOptions="Center" />-->
+        </Frame>
+
+     
+            <Frame x:Name="NotesFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
+                <StackLayout>
+                    <Button TranslationY="500" Text="X" Clicked="CloseNotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
+                </StackLayout>
+            </Frame>
+
+            <Frame x:Name="StatsFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
+                <StackLayout>
+                    <Button TranslationY="500" Text="X" Clicked="CloseStatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
+                </StackLayout>
+            </Frame>
+        </AbsoluteLayout>
 
 </ContentPage>

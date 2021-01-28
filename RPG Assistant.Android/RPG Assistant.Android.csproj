@@ -16,7 +16,6 @@
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
     <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
     <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
-    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
     <AndroidUseAapt2>true</AndroidUseAapt2>
@@ -90,7 +89,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RPG Assistant\RPG Assistant.csproj">
-      <Project>{A3719F0E-1470-4323-9452-E31424476D55}</Project>
+      <Project>{5F3AB7E0-6B65-466E-BA9B-81E4805E845B}</Project>
       <Name>RPG Assistant</Name>
     </ProjectReference>
   </ItemGroup>
