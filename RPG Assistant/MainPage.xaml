@@ -3,12 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="RPG_Assistant.MainPage">
 
+    <!--this is the layout for the app. I tried using a grid, but it would mess up the tabs.-->
     <AbsoluteLayout>
         <Frame TranslationX="0" BackgroundColor="#2196F3" Padding="24" CornerRadius="0" ScaleY="10" WidthRequest="400" HasShadow="False">
             <!--<Label Text="Welcome to Xamarin.Forms!" HorizontalTextAlignment="Center" TextColor="White" FontSize="36" Padding="32"/>-->
         </Frame>
         <Label TranslationY="64" Text="Hello World!" FontSize="Title" Padding="30,10,30,10"/>
 
+        <!--This is where the notes and stats buttons are for right now.-->
         <Frame TranslationX="30" TranslationY="660" Padding="36" HasShadow="false">
             <StackLayout>
                 <Button Text="Notes" Clicked="NotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="250" HorizontalOptions="Center" />
@@ -19,18 +21,19 @@
             <!--<Button Text="Stats" Clicked="StatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="250" HorizontalOptions="Center" />-->
         </Frame>
 
-     
-            <Frame x:Name="NotesFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
-                <StackLayout>
-                    <Button TranslationY="500" Text="X" Clicked="CloseNotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
-                </StackLayout>
-            </Frame>
+        <!--This is where the frames for the tabs are.-->
+        <Frame x:Name="NotesFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
+            <StackLayout>
+                <Button TranslationY="500" Text="X" Clicked="CloseNotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
+            </StackLayout>
+        </Frame>
 
-            <Frame x:Name="StatsFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
-                <StackLayout>
-                    <Button TranslationY="500" Text="X" Clicked="CloseStatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
-                </StackLayout>
-            </Frame>
+        <Frame x:Name="StatsFrame" TranslationX="0" TranslationY="245" Padding="0" WidthRequest="390" HeightRequest="600" Opacity="0" HasShadow="True">
+            <StackLayout>
+                <Button TranslationY="500" Text="X" Clicked="CloseStatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="22" WidthRequest="45" HorizontalOptions="Center" Opacity="1" Scale="1.25"/>
+            </StackLayout>
+        </Frame>
+
         </AbsoluteLayout>
 
 </ContentPage>
