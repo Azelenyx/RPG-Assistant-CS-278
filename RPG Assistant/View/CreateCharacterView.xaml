@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPG_Assistant.View.CreateCharacterView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout Margin="10,35,10,10">
+            <Label
+                FontAttributes="Bold"
+                FontSize="Large"
+                HorizontalOptions="Center"
+                Text="RPG ASSISTANT" />
+            <Label
+                FontSize="Medium"
+                HorizontalOptions="Center"
+                Text="Welcome to RPGAssistant." />
+            <Label FontSize="Medium">
+                Your dreamed RPG assistance will allow you to create and manage a D&amp;D character sheet.Let's get started. Enter your character name and race and then click the CREATE CHARACTER button!
+            </Label>
+            <!--  Text="{Binding Name}"  -->
+            <Editor
+                x:Name="characterName"
+                HeightRequest="50"
+                Placeholder="Enter your character name" />
+            <!--  Text="{Binding Race}"  -->
+            <Editor
+                x:Name="characterRace"
+                HeightRequest="50"
+                Placeholder="Enter your character race" />
+            <Button Clicked="Button_Clicked" Text="CREATE CHARACTER" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

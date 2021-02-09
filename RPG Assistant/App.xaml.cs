@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RPG_Assistant.View;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -10,7 +11,8 @@ namespace RPG_Assistant
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            //MainPage = new MainPage();
+            MainPage = new CreateCharacterView();
         }
 
         protected override void OnStart()

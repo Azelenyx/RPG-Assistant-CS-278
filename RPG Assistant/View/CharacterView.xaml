@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPG_Assistant.View.CharacterView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <Grid Margin="20" VerticalOptions="FillAndExpand">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="250" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+                <ColumnDefinition Width="60" />
+            </Grid.ColumnDefinitions>
+
+            <Label
+                x:Name="characterName"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="4"
+                FontAttributes="None"
+                FontSize="30"
+                HorizontalTextAlignment="Center"
+                Text="Character's Name"
+                VerticalTextAlignment="Center" />
+            <!--  Ability, Score, Modifier, and Saving's levels  -->
+            <Label
+                Grid.Row="2"
+                Grid.Column="0"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Text="Ability"
+                VerticalTextAlignment="Center" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="1"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Text="Score"
+                VerticalTextAlignment="Center" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="2"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Text="Modifier"
+                VerticalTextAlignment="Center" />
+            <Label
+                Grid.Row="2"
+                Grid.Column="3"
+                FontAttributes="Bold"
+                HorizontalTextAlignment="Center"
+                Text="Saving"
+                VerticalTextAlignment="Center" />
+
+            <!--  Strength  -->
+            <Label
+                Grid.Row="3"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Strength"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="SScore"
+                Grid.Row="3"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="SModifier"
+                Grid.Row="3"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="SSaving"
+                Grid.Row="3"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <!--  Dexterity  -->
+            <Label
+                Grid.Row="4"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Dexterity"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="DScore"
+                Grid.Row="4"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="DModifier"
+                Grid.Row="4"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="DSaving"
+                Grid.Row="4"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <!--  Constitution  -->
+            <Label
+                Grid.Row="5"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Constitution"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="CScore"
+                Grid.Row="5"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="CModifier"
+                Grid.Row="5"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="CSaving"
+                Grid.Row="5"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <!--  Intelligence  -->
+            <Label
+                Grid.Row="6"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Intelligence"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="IScore"
+                Grid.Row="6"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="IModifier"
+                Grid.Row="6"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="ISaving"
+                Grid.Row="6"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <!--  Wisdom  -->
+            <Label
+                Grid.Row="7"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Wisdom"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="WScore"
+                Grid.Row="7"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="WModifier"
+                Grid.Row="7"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="WSaving"
+                Grid.Row="7"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <!--  Charisma  -->
+            <Label
+                Grid.Row="8"
+                Grid.Column="0"
+                BackgroundColor="Beige"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="Charisma"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="ChScore"
+                Grid.Row="8"
+                Grid.Column="1"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="ChModifier"
+                Grid.Row="8"
+                Grid.Column="2"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+            <Label
+                x:Name="ChSaving"
+                Grid.Row="8"
+                Grid.Column="3"
+                BackgroundColor="LightGray"
+                FontAttributes="Bold"
+                FontSize="20"
+                HorizontalTextAlignment="Center"
+                Text="+/-0"
+                VerticalTextAlignment="Center" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
