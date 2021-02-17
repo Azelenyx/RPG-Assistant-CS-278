@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj": {}
+    "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj": {
+    "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
         "projectName": "RPG Assistant.iOS",
-        "projectPath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
-        "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\obj\\",
+        "projectPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
+        "packagesPath": "C:\\Users\\Donim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Donim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
-                "projectPath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj"
+              "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
+                "projectPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj"
               }
             }
           }
@@ -65,20 +65,20 @@
         }
       }
     },
-    "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
+    "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
+        "projectUniqueName": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
         "projectName": "RPG Assistant",
-        "projectPath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
-        "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\obj\\",
+        "projectPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
+        "packagesPath": "C:\\Users\\Donim\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Donim\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -130,7 +130,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
