@@ -9,6 +9,7 @@ namespace RPG_Assistant.Model
         #region fields
         public string name;
         public string race;
+        public string characterClass;
         public int level;
         //Abilities
         public int[] strength;
@@ -19,10 +20,11 @@ namespace RPG_Assistant.Model
         public int[] charisma;
         #endregion
 
-        public Character(string name, string race)
+        public Character(string name, string race, string cClass)
         {
             this.name = name;
             this.race = race;
+            this.characterClass = cClass;
             this.level = 0;
 
             this.strength = new int[3];

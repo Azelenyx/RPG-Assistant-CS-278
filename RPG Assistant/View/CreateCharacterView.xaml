@@ -23,10 +23,54 @@
                 HeightRequest="50"
                 Placeholder="Enter your character name" />
             <!--  Text="{Binding Race}"  -->
+            <!--
             <Editor
                 x:Name="characterRace"
                 HeightRequest="50"
                 Placeholder="Enter your character race" />
+            -->
+            <Picker
+                x:Name="racePicker"
+                Title="Select a race"
+                SelectedIndexChanged="OnPickerSelectedRaceChanged"
+                TitleColor="DarkGray">
+                <Picker.Items>
+                    <x:String>Dragonborn</x:String>
+                    <x:String>Dwarf</x:String>
+                    <x:String>Elf</x:String>
+                    <x:String>Gnome</x:String>
+                    <x:String>Half-Elf</x:String>
+                    <x:String>Half-Orc</x:String>
+                    <x:String>Human</x:String>
+                    <x:String>Tiefling</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Picker
+                x:Name="classPicker"
+                Title="Select a class"
+                SelectedIndexChanged="OnPickerSelectedClassChanged"
+                TitleColor="DarkGray">
+                <Picker.Items>
+                    <x:String>Barbarian</x:String>
+                    <x:String>Bard</x:String>
+                    <x:String>Cleric</x:String>
+                    <x:String>Druid</x:String>
+                    <x:String>Fighter</x:String>
+                    <x:String>Monk</x:String>
+                    <x:String>Paladin</x:String>
+                    <x:String>Ranger</x:String>
+                    <x:String>Rogue</x:String>
+                    <x:String>Sorcerer</x:String>
+                    <x:String>Warlock</x:String>
+                    <x:String>Wizard</x:String>
+                </Picker.Items>
+            </Picker>
+            <!--
+            <StackLayout Orientation="Horizontal">
+                <Label Text="You chose:" />
+                <Label x:Name="raceLabel" />
+            </StackLayout>-->
             <Button Clicked="Button_Clicked" Text="CREATE CHARACTER" />
         </StackLayout>
     </ContentPage.Content>
