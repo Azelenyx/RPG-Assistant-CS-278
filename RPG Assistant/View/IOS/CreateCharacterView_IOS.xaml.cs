@@ -13,7 +13,7 @@ using Picker = Xamarin.Forms.Picker;
 namespace RPG_Assistant.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CreateCharacterView : ContentPage
+    public partial class CreateCharacterView_IOS : ContentPage
     {
         /*
         Picker racePicker;
@@ -24,7 +24,7 @@ namespace RPG_Assistant.View
         Character character;
         String characterRace;
         String characterClass;
-        public CreateCharacterView()
+        public CreateCharacterView_IOS()
         {
             InitializeComponent();
             // This is optional, but provides better layout for the iPhone X 
@@ -63,7 +63,7 @@ namespace RPG_Assistant.View
             var cRace = characterRace;
             var cClass = characterClass;
             character = new Character(cName, cRace, cClass);
-            Navigation.PushModalAsync(new CharacterView(character));
+            Navigation.PushModalAsync(new CharacterView_IOS(character));
         }
     }
 }

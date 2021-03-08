@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage
-    x:Class="RPG_Assistant.View.CharacterView"
+    x:Class="RPG_Assistant.View.CharacterView_ANDROID"
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
     <ContentPage.Content>
-        <Grid Margin="20" VerticalOptions="FillAndExpand">
+        <Grid Margin="30" VerticalOptions="FillAndExpand">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto" />
                 <RowDefinition Height="250" />
@@ -30,10 +30,11 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="4"
                 FontAttributes="None"
-                FontSize="30"
+                FontSize="45"
                 HorizontalTextAlignment="Center"
                 Text="Character's Name"
                 VerticalTextAlignment="Center" />
+                
             <!--  Ability, Score, Modifier, and Saving's levels  -->
             <Label
                 Grid.Row="2"

@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hHoRAEWQMoPD8ayTsgQrDQnAYqiUmeNb/m/mmy05Epa7rUAZZwbOareTGwPGp/xul5Lamz/Rp+knHOHU04oqsg==",
+  "dgSpecHash": "Z3kQCFnG0Ej3QCN2PCXNSqFCNvyFbDAAbk5Wl3GLrej42r2EqMNojOh2QhoXKrGkigGTK0zD1LNtjKRDhoT0kg==",
   "success": true,
-  "projectFilePath": "E:\\GitHub\\RPGAssistant\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
+  "projectFilePath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/RPG Assistant.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\wlsnm\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\wlsnm\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\wlsnm\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
-    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\wlsnm\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "/Users/willemmarda/.nuget/packages/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/Users/willemmarda/.nuget/packages/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512",
+    "/Users/willemmarda/.nuget/packages/system.numerics.vectors/4.5.0/system.numerics.vectors.4.5.0.nupkg.sha512",
+    "/Users/willemmarda/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "/Users/willemmarda/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

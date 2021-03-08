@@ -17,14 +17,12 @@
 
   <ItemGroup>
     <Folder Include="ViewModel\" />
+    <Folder Include="View\Android\" />
+    <Folder Include="View\IOS\" />
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="View\CharacterView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Update="View\CreateCharacterView.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Compile Remove="View\Android\CharacterView.xaml.cs" />
+    <Compile Remove="View\IOS\CharacterView.xaml.cs" />
   </ItemGroup>
 </Project>

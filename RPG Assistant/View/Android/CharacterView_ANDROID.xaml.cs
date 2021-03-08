@@ -6,23 +6,23 @@ using System.Text;
 using System.Threading.Tasks;
 
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration.iOSSpecific;
+using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 
 namespace RPG_Assistant.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class CharacterView : ContentPage
+    public partial class CharacterView_ANDROID : ContentPage
     {
-        public CharacterView()
+        public CharacterView_ANDROID()
         {
             InitializeComponent();
-            // This is optional, but provides better layout for the iPhone X 
-            On<Xamarin.Forms.PlatformConfiguration.iOS>().SetUseSafeArea(true);
+            // This is for Android
+            On<Xamarin.Forms.PlatformConfiguration.Android>();
         }
 
         public Character newCharacter;
-        public CharacterView(Character character)
+        public CharacterView_ANDROID(Character character)
         {
             newCharacter = character;
             InitializeComponent();
