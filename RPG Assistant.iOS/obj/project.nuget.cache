@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "PUAwwjT8i8B2VzG6m8FEs7K+wShiMvggyLM4KzbNKCEeK14GOGu0c4ZxJ5r37yz0ETN2k4g/V6PMeAF2Hb7taA==",
+  "dgSpecHash": "q8dKM2v8eEaariLW/UMSjaWlNi31dD6ZSZea0036xfrGTay5IHQA9V31Ck6LqXf4h16hRhe6Dla1TMlzYu1fXQ==",
   "success": true,
-  "projectFilePath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant.iOS/RPG Assistant.iOS.csproj",
+  "projectFilePath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
   "expectedPackageFiles": [
-    "/Users/willemmarda/.nuget/packages/xamarin.essentials/1.5.3.2/xamarin.essentials.1.5.3.2.nupkg.sha512",
-    "/Users/willemmarda/.nuget/packages/xamarin.forms/4.6.0.1141/xamarin.forms.4.6.0.1141.nupkg.sha512"
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\Donim\\.nuget\\packages\\xamarin.forms\\4.6.0.1141\\xamarin.forms.4.6.0.1141.nupkg.sha512"
   ],
   "logs": []
 }

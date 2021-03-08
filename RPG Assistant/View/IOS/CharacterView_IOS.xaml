@@ -308,9 +308,9 @@
                 Text="+/-0"
                 VerticalTextAlignment="Center" />
 
-            <Button Grid.Row="10" Grid.RowSpan="6" Grid.ColumnSpan="4" Text="Notes" Clicked="NotesButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="28"/>
+            <Button Grid.Row="10" Grid.RowSpan="6" Grid.ColumnSpan="4" Text="Notes" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="28"/>
 
-            <Button Grid.Row="18" Grid.RowSpan="6" Grid.ColumnSpan="4" Text="Stats" Clicked="StatsButtonClicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="28" />
+            <Button Grid.Row="18" Grid.RowSpan="6" Grid.ColumnSpan="4" Text="Stats" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="28" />
 
         </Grid>
 
