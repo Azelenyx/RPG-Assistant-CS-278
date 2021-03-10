@@ -1930,39 +1930,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Donim\\.nuget\\packages\\": {},
-    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
+    "/Users/willemmarda/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
+      "projectUniqueName": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant.Android/RPG Assistant.Android.csproj",
       "projectName": "RPG Assistant.Android",
-      "projectPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
-      "packagesPath": "C:\\Users\\Donim\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\obj\\",
+      "projectPath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant.Android/RPG Assistant.Android.csproj",
+      "packagesPath": "/Users/willemmarda/.nuget/packages/",
+      "outputPath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant.Android/obj/",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
-      "fallbackFolders": [
-        "C:\\Microsoft\\Xamarin\\NuGet\\"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Donim\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "/Users/willemmarda/.config/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "monoandroid90"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
-              "projectPath": "C:\\Users\\Donim\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj"
+            "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/RPG Assistant.csproj": {
+              "projectPath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/RPG Assistant.csproj"
             }
           }
         }

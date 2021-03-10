@@ -11,18 +11,7 @@ namespace RPG_Assistant
         {
             InitializeComponent();
 
-            int deviceType = 0;
-            deviceType = GetDevice();
-
-            if (deviceType == 0)
-            {
-                MainPage = new CreateCharacterView_IOS();
-            }
-            else
-            if (deviceType == 1)
-            {
-                MainPage = new CreateCharacterView_ANDROID();
-            }
+            MainPage = new CreateCharacterView_ANDROID();
 
         }
 
@@ -38,22 +27,7 @@ namespace RPG_Assistant
         {
         }
 
-        private int GetDevice()
-        {
-
-            int thisDevice = 0;
-#if __IOS__
-            thisDevice = 0;
-#else
-
-#if __ANDROID__
-            thisDevice = 1;
-#endif
-#endif
-            return thisDevice;
-        }
-
 
     }
-}
 
+}

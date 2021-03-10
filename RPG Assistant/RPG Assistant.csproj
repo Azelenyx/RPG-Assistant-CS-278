@@ -17,8 +17,6 @@
 
   <ItemGroup>
     <Folder Include="ViewModel\" />
-    <Folder Include="View\Android\" />
-    <Folder Include="View\IOS\" />
   </ItemGroup>
 
   <ItemGroup>
