@@ -628,24 +628,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/willemmarda/.nuget/packages/": {}
+    "C:\\Users\\wlsnm\\.nuget\\packages\\": {},
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/RPG Assistant.csproj",
+      "projectUniqueName": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj",
       "projectName": "RPG Assistant",
-      "projectPath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/RPG Assistant.csproj",
-      "packagesPath": "/Users/willemmarda/.nuget/packages/",
-      "outputPath": "/Users/willemmarda/Documents/GitHub/RPG-Assistant-CS-278/RPG Assistant/obj/",
+      "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj",
+      "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
+      "outputPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
+      ],
       "configFilePaths": [
-        "/Users/willemmarda/.config/NuGet/NuGet.Config"
+        "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -689,7 +696,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.102/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
       }
     }
   }

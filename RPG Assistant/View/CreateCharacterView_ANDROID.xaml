@@ -10,12 +10,12 @@
                 FontSize="Large"
                 HorizontalOptions="Center"
                 Text="RPG ASSISTANT" />
-            <Label
-                FontSize="Medium"
-                HorizontalOptions="Center"
-                Text="Welcome to RPGAssistant." />
+            <BoxView
+                HeightRequest="5"
+                HorizontalOptions="FillAndExpand"
+                Color="#1690F4" />
             <Label FontSize="Medium">
-                Your dreamed RPG assistance will allow you to create and manage a D&amp;D character sheet.Let's get started. Enter your character name and race and then click the CREATE CHARACTER button!
+                RPG Assistant will help you create a new character sheet for your game. Please enter your character Name and select a Race and a Class to get started.
             </Label>
             <!--  Text="{Binding Name}"  -->
             <Editor
@@ -66,11 +66,6 @@
                     <x:String>Wizard</x:String>
                 </Picker.Items>
             </Picker>
-            <!--
-            <StackLayout Orientation="Horizontal">
-                <Label Text="You chose:" />
-                <Label x:Name="raceLabel" />
-            </StackLayout>-->
             <Button Clicked="Button_Clicked" Text="CREATE CHARACTER" />
         </StackLayout>
     </ContentPage.Content>

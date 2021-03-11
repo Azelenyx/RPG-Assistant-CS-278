@@ -32,6 +32,8 @@ namespace RPG_Assistant.View
         {
             base.OnAppearing();
             characterName.Text = newCharacter.name;
+            characterRace.Text = "Race: " + newCharacter.race;
+            characterClass.Text = "Class: " + newCharacter.characterClass;
         }
     }
 }
