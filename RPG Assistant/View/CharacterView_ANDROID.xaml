@@ -2,11 +2,13 @@
 <ContentPage
     x:Class="RPG_Assistant.View.CharacterView_ANDROID"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="@drawable/background1.jpg">
     <ContentPage.Content>
         <ScrollView Margin="10" VerticalOptions="FillAndExpand">
             <Grid Margin="0" VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
@@ -31,7 +33,7 @@
                     Grid.Column="0"
                     Grid.ColumnSpan="4"
                     FontAttributes="None"
-                    FontSize="45"
+                    FontSize="Header"
                     HorizontalTextAlignment="Center"
                     Text="Character's Name"
                     VerticalTextAlignment="Center" />
@@ -47,13 +49,13 @@
                     <Label
                         x:Name="characterRace"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Large"
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center" />
                     <Label
                         x:Name="characterClass"
                         FontAttributes="Bold"
-                        FontSize="Medium"
+                        FontSize="Large"
                         HorizontalTextAlignment="Center"
                         VerticalTextAlignment="Center" />
                     <BoxView
@@ -67,6 +69,7 @@
                     Grid.Row="2"
                     Grid.Column="0"
                     FontAttributes="Bold"
+                    FontSize="Medium"
                     HorizontalTextAlignment="Center"
                     Text="Ability"
                     VerticalTextAlignment="Center" />
@@ -92,7 +95,11 @@
                     Text="Saving"
                     VerticalTextAlignment="Center" />
 
-                <!--  Strength  -->
+                <!--
+                    Strength
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="3"
                     Grid.Column="0"
@@ -102,37 +109,35 @@
                     HorizontalTextAlignment="Center"
                     Text="Strength"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="SScore"
                     Grid.Row="3"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="SModifier"
                     Grid.Row="3"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="SSaving"
                     Grid.Row="3"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
+                    Text="+/-0" />
+                <!--
+                    Dexterity
                     HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <!--  Dexterity  -->
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="4"
                     Grid.Column="0"
@@ -142,37 +147,35 @@
                     HorizontalTextAlignment="Center"
                     Text="Dexterity"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="DScore"
                     Grid.Row="4"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="DModifier"
                     Grid.Row="4"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="DSaving"
                     Grid.Row="4"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
+                    Text="+/-0" />
+                <!--
+                    Constitution
                     HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <!--  Constitution  -->
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="5"
                     Grid.Column="0"
@@ -182,37 +185,35 @@
                     HorizontalTextAlignment="Center"
                     Text="Constitution"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="CScore"
                     Grid.Row="5"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="CModifier"
                     Grid.Row="5"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="CSaving"
                     Grid.Row="5"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
+                    Text="+/-0" />
+                <!--
+                    Intelligence
                     HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <!--  Intelligence  -->
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="6"
                     Grid.Column="0"
@@ -222,37 +223,35 @@
                     HorizontalTextAlignment="Center"
                     Text="Intelligence"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="IScore"
                     Grid.Row="6"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="IModifier"
                     Grid.Row="6"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="ISaving"
                     Grid.Row="6"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
+                    Text="+/-0" />
+                <!--
+                    Wisdom
                     HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <!--  Wisdom  -->
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="7"
                     Grid.Column="0"
@@ -262,37 +261,35 @@
                     HorizontalTextAlignment="Center"
                     Text="Wisdom"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="WScore"
                     Grid.Row="7"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="WModifier"
                     Grid.Row="7"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="WSaving"
                     Grid.Row="7"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
+                    Text="+/-0" />
+                <!--
+                    Charisma
                     HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <!--  Charisma  -->
+                    VerticalTextAlignment="Center"
+                -->
                 <Label
                     Grid.Row="8"
                     Grid.Column="0"
@@ -302,36 +299,85 @@
                     HorizontalTextAlignment="Center"
                     Text="Charisma"
                     VerticalTextAlignment="Center" />
-                <Label
+                <Editor
                     x:Name="ChScore"
                     Grid.Row="8"
                     Grid.Column="1"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="0" />
+                <Editor
                     x:Name="ChModifier"
                     Grid.Row="8"
                     Grid.Column="2"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
-                <Label
+                    Text="+/-0" />
+                <Editor
                     x:Name="ChSaving"
                     Grid.Row="8"
                     Grid.Column="3"
                     BackgroundColor="LightGray"
                     FontAttributes="Bold"
                     FontSize="20"
-                    HorizontalTextAlignment="Center"
-                    Text="+/-0"
-                    VerticalTextAlignment="Center" />
+                    Text="+/-0" />
+                <!--  Room to add more features  -->
+                <StackLayout
+                    Grid.Row="10"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4">
+                    <BoxView
+                        HeightRequest="5"
+                        HorizontalOptions="FillAndExpand"
+                        Color="#1690F4" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="None"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="Room for additional Features"
+                        VerticalTextAlignment="Center" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="None"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="Room for additional Features"
+                        VerticalTextAlignment="Center" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="None"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="Room for additional Features"
+                        VerticalTextAlignment="Center" />
+
+                    <Label
+                        Grid.Row="0"
+                        Grid.Column="0"
+                        Grid.ColumnSpan="4"
+                        FontAttributes="None"
+                        FontSize="Large"
+                        HorizontalTextAlignment="Center"
+                        Text="Room for additional Features"
+                        VerticalTextAlignment="Center" />
+
+                    <BoxView
+                        HeightRequest="5"
+                        HorizontalOptions="FillAndExpand"
+                        Color="#1690F4" />
+                </StackLayout>
             </Grid>
         </ScrollView>
     </ContentPage.Content>

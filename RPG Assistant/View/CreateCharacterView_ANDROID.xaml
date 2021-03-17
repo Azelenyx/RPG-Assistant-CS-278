@@ -32,6 +32,7 @@
             <Picker
                 x:Name="racePicker"
                 Title="Select a race"
+                FontSize="Large"
                 SelectedIndexChanged="OnPickerSelectedRaceChanged"
                 TitleColor="DarkGray">
                 <Picker.Items>
@@ -49,6 +50,7 @@
             <Picker
                 x:Name="classPicker"
                 Title="Select a class"
+                FontSize="Large"
                 SelectedIndexChanged="OnPickerSelectedClassChanged"
                 TitleColor="DarkGray">
                 <Picker.Items>
