@@ -1,12 +1,8 @@
-﻿using RPG_Assistant.Model;
+﻿using RPG_Assistant.Database;
+using RPG_Assistant.Model;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
-using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
 using Picker = Xamarin.Forms.Picker;
 
@@ -54,15 +50,20 @@ namespace RPG_Assistant.View
                 characterClass = classPicker.Items[selectedClassIndex];
             }
         }
-
-        //int count = 0;
-        void Button_Clicked(object sender, System.EventArgs e)
+        public void Button_Clicked(object sender, System.EventArgs e)
         {
-            var cName = characterName.Text;
-            //var race = characterRace.Text;
-            var cRace = characterRace;
-            var cClass = characterClass;
-            character = new Character(cName, cRace, cClass);
+            character = new Character
+            {
+                name = characterName.Text,
+                race = characterRace,
+                cClass = characterClass
+            };
+            /* Save the new character in the DB */
+            var task = Task.Run(async () =>
+            {
+                await CharacterDatabase.CreateCharacter(character);
+            });
+            /* Going to the Character View */
             Navigation.PushModalAsync(new CharacterView_ANDROID(character));
         }
     }

@@ -1,4 +1,5 @@
-﻿using RPG_Assistant.Model;
+﻿using RPG_Assistant.Database;
+using RPG_Assistant.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -33,7 +34,11 @@ namespace RPG_Assistant.View
             base.OnAppearing();
             characterName.Text = newCharacter.name;
             characterRace.Text = "Race: " + newCharacter.race;
-            characterClass.Text = "Class: " + newCharacter.characterClass;
+            characterClass.Text = "Class: " + newCharacter.cClass;
+            var task = Task.Run(async () =>
+            {
+                var character = await CharacterDatabase.SelectCharacter();
+            });
         }
     }
 }

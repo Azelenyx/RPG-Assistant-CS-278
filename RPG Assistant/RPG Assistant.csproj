@@ -11,16 +11,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.3" />
+    <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xamarin.Forms" Version="4.6.0.1141" />
     <PackageReference Include="Xamarin.Essentials" Version="1.5.3.2" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="ViewModel\" />
+    <Compile Remove="View\Android\CharacterView.xaml.cs" />
+    <Compile Remove="View\IOS\CharacterView.xaml.cs" />
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Remove="View\Android\CharacterView.xaml.cs" />
-    <Compile Remove="View\IOS\CharacterView.xaml.cs" />
+    <Folder Include="ViewModel\" />
   </ItemGroup>
 </Project>

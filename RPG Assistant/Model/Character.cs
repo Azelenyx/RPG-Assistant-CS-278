@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -7,44 +8,25 @@ namespace RPG_Assistant.Model
     public class Character
     {
         #region fields
-        public string name;
-        public string race;
-        public string characterClass;
-        public int level;
+        [PrimaryKey, AutoIncrement]
+        public int Id { get; set; }
+        public string name { get; set; }
+        public string race { get; set; }
+        public string cClass { get; set; }
+        public int level { get; set; }
+
         //Abilities
-        public int[] strength;
-        public int[] dexterity;
-        public int[] constitution;
-        public int[] inteligence;
-        public int[] wisdom;
-        public int[] charisma;
-        #endregion
-
-        public Character(string name, string race, string cClass)
-        {
-            this.name = name;
-            this.race = race;
-            this.characterClass = cClass;
-            this.level = 0;
-
-            this.strength = new int[3];
-            this.dexterity = new int[3];
-            this.constitution = new int[3];
-            this.inteligence = new int[3];
-            this.wisdom = new int[3];
-            this.charisma = new int[3];
-        }
-        #region Properties
-        public string Name { get; set; }
-        public string Race { get; set; }
-        public int Strength { get; set; }
-        public int Dexterity { get; set; }
-        public int Constitution { get; set; }
-        public int Intelligence { get; set; }
-        public int Wisdom { get; set; }
-        public int Charisma { get; set; }
+        public int strength { get; set; }
+        public int dexterity { get; set; }
+        public int constitution { get; set; }
+        public int inteligence { get; set; }
+        public int wisdom { get; set; }
+        public int charisma { get; set; }
 
         #endregion
+
+        public Character () { }
+        /*
         public int Modifier(int score)
         {
             int modifier = 0;
@@ -58,6 +40,7 @@ namespace RPG_Assistant.Model
             }
             return modifier;
         }
+        */
 
     }
 }
