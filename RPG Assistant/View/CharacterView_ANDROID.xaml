@@ -5,7 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     BackgroundImageSource="@drawable/background1.jpg">
     <ContentPage.Content>
-        <ScrollView Margin="10" VerticalOptions="FillAndExpand">
+        <ScrollView Margin="10,50,10,50" VerticalOptions="FillAndExpand">
             <Grid Margin="0" VerticalOptions="FillAndExpand">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto" />
@@ -324,6 +324,7 @@
                     FontSize="20"
                     Text="+/-0" />
                 <!--  Room to add more features  -->
+
                 <StackLayout
                     Grid.Row="10"
                     Grid.Column="0"
@@ -332,6 +333,13 @@
                         HeightRequest="5"
                         HorizontalOptions="FillAndExpand"
                         Color="#1690F4" />
+
+
+                   <StackLayout>
+                    <Button Grid.Row="0" Grid.RowSpan="4" Grid.Column="0" Text="Backpack" Clicked="InventoryButton_Clicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" />
+                  
+                    <Button Text="Spells and Abilities" Clicked="SpellsButton_Clicked" TextColor="White" BackgroundColor="SlateGray" FontSize="Title" CornerRadius="24" WidthRequest="350" HeightRequest="50" HorizontalOptions="Center" />
+                   </StackLayout>
 
                     <Label
                         Grid.Row="0"

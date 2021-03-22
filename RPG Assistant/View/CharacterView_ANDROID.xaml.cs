@@ -22,6 +22,7 @@ namespace RPG_Assistant.View
             On<Xamarin.Forms.PlatformConfiguration.Android>();
         }
 
+        public int testNum = 0;
         public Character newCharacter;
         public CharacterView_ANDROID(Character character)
         {
@@ -40,5 +41,17 @@ namespace RPG_Assistant.View
                 var character = await CharacterDatabase.SelectCharacter();
             });
         }
+
+        void InventoryButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new CharacterView_Inventory());
+        }
+
+        void SpellsButton_Clicked(System.Object sender, System.EventArgs e)
+        {
+            Navigation.PushModalAsync(new CharacterView_Spells());
+        }
+
+
     }
 }

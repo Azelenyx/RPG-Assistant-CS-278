@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPG_Assistant.View.CharacterView_Spells"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    BackgroundImageSource="@drawable/background1.jpg">
+    <ContentPage.Content>
+        <ScrollView Margin="10,50,10,50" VerticalOptions="FillAndExpand">
+            <Grid Margin="0" VerticalOptions="FillAndExpand">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="60" />
+                </Grid.ColumnDefinitions>
+
+                <Button
+                    Grid.Row="0"
+                    
+                    Grid.Column="0"
+                    Text="X"
+                    Clicked="Button_Clicked"
+                    TextColor="White"
+                    BackgroundColor="SlateGray"
+                    FontSize="Title"
+                    CornerRadius="25"
+                    WidthRequest="50"
+                    HeightRequest="50"
+                    HorizontalOptions="Start"
+                    />
+
+                <Label
+                    x:Name="Spells"
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    FontAttributes="Bold"
+                    FontSize="Title"
+                    HorizontalTextAlignment="Center"
+                    Text="Spells and Abilities"
+                    VerticalTextAlignment="Center"
+                    />
+
+
+
+            </Grid>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
