@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPG_Assistant.View.MainView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="RPG Assistant">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem
+            IconImageSource="example_icon.png"
+            Order="Primary"
+            Priority="1"
+            Text="Example Item" />
+    </ContentPage.ToolbarItems>
+
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Grid RowSpacing="20">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Label
+                    Grid.Row="0"
+                    Padding="10"
+                    FontAttributes="Bold"
+                    FontSize="Large"
+                    HorizontalOptions="Center"
+                    Text="RPG Assistant Character Sheet" />
+
+                <Button
+                    Grid.Row="2"
+                    Clicked="Clicked_CreateCharacter"
+                    Text="CREATE CHARACTER" />
+
+                <Button
+                    Grid.Row="3"
+                    Clicked="Clicked_SelectCharacter"
+                    Text="SELECT CHARACTER" />
+                <Button
+                    Grid.Row="4"
+                    Clicked="Clicked_DeleteCharacter"
+                    Text="DELETE CHARACTER" />
+            </Grid>
+        </StackLayout>
+        <!--
+
+
+
+       <ContentPage.Content>
+        <StackLayout>
+            <Label
+                HorizontalOptions="CenterAndExpand"
+                Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+        -->
+
+
+
+    </ContentPage.Content>
+</ContentPage>

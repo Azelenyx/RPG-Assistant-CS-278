@@ -11,7 +11,7 @@ namespace RPG_Assistant
         {
             InitializeComponent();
 
-            MainPage = new CreateCharacterView_ANDROID();
+            MainPage = new MainView();
 
         }
 

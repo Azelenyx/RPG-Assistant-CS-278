@@ -1,4 +1,5 @@
 ﻿using RPG_Assistant.Model;
+using RPG_Assistant.ViewModel;
 using SQLite;
 using System;
 using System.Collections.Generic;
@@ -10,24 +11,17 @@ using Xamarin.Essentials;
 namespace RPG_Assistant.Database
 {
     //public class CharacterDatabase
-    public static class CharacterDatabase
+    public class CharacterDatabase: ViewModelBase
     {
         static SQLiteAsyncConnection characterDB;
 
-        /*       public CharacterDatabase(string dbPath)
-               {
-                   characterDB = new SQLiteAsyncConnection(dbPath);
-                   characterDB.CreateTableAsync<CharactersData>().Wait();
-               }*/
+        public List<Character> Characters { get; internal set; }
 
-        //public static async Task Init()
         public static async Task Init()
         {
             if (characterDB != null)
                 return;
-            //static readonly string _databasePath = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "SqliteDatabase.db3");
             string databasePath = Path.Combine(Xamarin.Essentials.FileSystem.AppDataDirectory, "CharactersDatabase.db3");
-            //var databasePath = Path.Combine(FileSystem.AppDataDirectory, "CharactersDatabase.db");
             characterDB = new SQLiteAsyncConnection(databasePath);
 
             await characterDB.CreateTableAsync<Character>();
@@ -46,7 +40,7 @@ namespace RPG_Assistant.Database
             await characterDB.DeleteAsync<Character>(id);
         }
 
-        public static async Task<IEnumerable<Character>> SelectCharacter()
+        public static async Task<List<Character>> SelectCharacter()
         {
             await Init();
             var character = await characterDB.Table<Character>().ToListAsync();

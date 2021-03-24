@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="RPG_Assistant.View.SelectCharacterView"
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <!--
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand"
+                HorizontalOptions="CenterAndExpand" />
+        </StackLayout>
+    </ContentPage.Content>
+    -->
+    <ContentPage.Content>
+        <StackLayout x:Name="MainStackLayout" Padding="25">
+            <!--  Character Search Bar  -->
+            <SearchBar Placeholder="Search by character name..." />
+            <!--  No Characters Label  -->
+            <Label x:Name="noCharactersLabel" Text="You don't have any character." />
+            <!--  Character List  -->
+            <ListView x:Name="charactersListView" ItemsSource="{Binding Characters}">
+                <ListView.Header>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="2*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="1.5*" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+
+                        <Label Grid.Column="0" Text="Name" />
+                        <Label Grid.Column="1" Text="Race" />
+                        <Label Grid.Column="2" Text="Class" />
+                        <Label Grid.Column="3" Text="Level" />
+                    </Grid>
+                </ListView.Header>
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="2*" />
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="1.5*" />
+                                    <ColumnDefinition Width="*" />
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Column="0" Text="{Binding name}" />
+                                <Label Grid.Column="1" Text="{Binding race}" />
+                                <Label Grid.Column="2" Text="{Binding cClass}" />
+                                <Label Grid.Column="3" Text="{Binding level}" />
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

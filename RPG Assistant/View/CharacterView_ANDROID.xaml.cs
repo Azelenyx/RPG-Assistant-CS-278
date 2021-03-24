@@ -5,7 +5,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.PlatformConfiguration.AndroidSpecific;
 using Xamarin.Forms.Xaml;
@@ -36,10 +35,11 @@ namespace RPG_Assistant.View
             characterName.Text = newCharacter.name;
             characterRace.Text = "Race: " + newCharacter.race;
             characterClass.Text = "Class: " + newCharacter.cClass;
+            /*
             var task = Task.Run(async () =>
             {
                 var character = await CharacterDatabase.SelectCharacter();
-            });
+            });*/
         }
 
         void InventoryButton_Clicked(System.Object sender, System.EventArgs e)
