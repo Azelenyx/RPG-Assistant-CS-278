@@ -68,6 +68,224 @@
                     <x:String>Wizard</x:String>
                 </Picker.Items>
             </Picker>
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+
+                <!--top left grid slot for Strength -->
+                <Grid Grid.Row="0" Grid.Column="0">
+                    <Picker
+                x:Name="strengthPicker"
+                Title="Strength"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedStrengthChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+                <!--top middle grid slot for Dexterity -->
+                <Grid Grid.Row="0" Grid.Column="1">
+                    <Picker
+                x:Name="dexterityPicker"
+                Title="Dexterity"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedDexterityChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+                <!--right middle grid slot for Constitution -->
+                <Grid Grid.Row="0" Grid.Column="2">
+                    <Picker
+                x:Name="constitutionPicker"
+                Title="Constitution"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedConstitutionChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+                <!--bottom left grid slot for Intelligence -->
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Picker
+                x:Name="intelligencePicker"
+                Title="Intelligence"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedIntelligenceChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+                <!--bottom middle grid slot for Wisdom -->
+                <Grid Grid.Row="1" Grid.Column="1">
+                    <Picker
+                x:Name="WisdomPicker"
+                Title="Wisdom"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedWisdomChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+                <!--bottom right grid slot for Charisma -->
+                <Grid Grid.Row="1" Grid.Column="2">
+                    <Picker
+                x:Name="charismaPicker"
+                Title="Charisma"
+                FontSize="Large"
+                SelectedIndexChanged="OnPickerSelectedCharismaChanged"
+                TitleColor="DarkGray">
+                        <Picker.Items>
+                            <x:String>0</x:String>
+                            <x:String>1</x:String>
+                            <x:String>2</x:String>
+                            <x:String>3</x:String>
+                            <x:String>4</x:String>
+                            <x:String>5</x:String>
+                            <x:String>6</x:String>
+                            <x:String>7</x:String>
+                            <x:String>8</x:String>
+                            <x:String>9</x:String>
+                            <x:String>10</x:String>
+                            <x:String>11</x:String>
+                            <x:String>12</x:String>
+                            <x:String>13</x:String>
+                            <x:String>14</x:String>
+                            <x:String>15</x:String>
+                            <x:String>16</x:String>
+                            <x:String>17</x:String>
+                            <x:String>18</x:String>
+                            <x:String>19</x:String>
+                            <x:String>20</x:String>
+                        </Picker.Items>
+                    </Picker>
+                </Grid>
+
+            </Grid>
+            
             <Button Clicked="Button_Clicked" Text="CREATE CHARACTER" />
         </StackLayout>
     </ContentPage.Content>

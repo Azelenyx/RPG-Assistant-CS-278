@@ -26,7 +26,7 @@ namespace RPG_Assistant.Model
         #endregion
 
         public Character () { }
-        /*
+        
         public int Modifier(int score)
         {
             int modifier = 0;
@@ -40,7 +40,7 @@ namespace RPG_Assistant.Model
             }
             return modifier;
         }
-        */
+        
 
     }
 }

@@ -1508,24 +1508,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\wlsnm\\.nuget\\packages\\": {},
+    "C:\\Users\\aharb\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
+      "projectUniqueName": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
       "projectName": "RPG Assistant.iOS",
-      "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
-      "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
-      "outputPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.iOS\\obj\\",
+      "projectPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\RPG Assistant.iOS.csproj",
+      "packagesPath": "C:\\Users\\aharb\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.iOS\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\aharb\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1539,8 +1539,8 @@
       "frameworks": {
         "xamarinios10": {
           "projectReferences": {
-            "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj": {
-              "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj"
+            "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
+              "projectPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj"
             }
           }
         }

@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GitHub\\RPG-Assistant\\RPG Assistant.Android\\RPG Assistant.Android.csproj": {}
+    "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj": {}
   },
   "projects": {
-    "E:\\GitHub\\RPG-Assistant\\RPG Assistant.Android\\RPG Assistant.Android.csproj": {
+    "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
+        "projectUniqueName": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
         "projectName": "RPG Assistant.Android",
-        "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
-        "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant.Android\\obj\\",
+        "projectPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\RPG Assistant.Android.csproj",
+        "packagesPath": "C:\\Users\\aharb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aharb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj": {
-                "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj"
+              "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
+                "projectPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj"
               }
             }
           }
@@ -54,20 +54,20 @@
         }
       }
     },
-    "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj": {
+    "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj",
+        "projectUniqueName": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
         "projectName": "RPG Assistant",
-        "projectPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\RPG Assistant.csproj",
-        "packagesPath": "C:\\Users\\wlsnm\\.nuget\\packages\\",
-        "outputPath": "E:\\GitHub\\RPG-Assistant\\RPG Assistant\\obj\\",
+        "projectPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\RPG Assistant.csproj",
+        "packagesPath": "C:\\Users\\aharb\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aharb\\Documents\\GitHub\\RPG-Assistant-CS-278\\RPG Assistant\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\wlsnm\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aharb\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

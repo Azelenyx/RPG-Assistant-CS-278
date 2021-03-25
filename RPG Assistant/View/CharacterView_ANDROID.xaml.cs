@@ -35,6 +35,21 @@ namespace RPG_Assistant.View
             characterName.Text = newCharacter.name;
             characterRace.Text = "Race: " + newCharacter.race;
             characterClass.Text = "Class: " + newCharacter.cClass;
+
+            SScore.Text = newCharacter.strength.ToString();
+            DScore.Text = newCharacter.dexterity.ToString();
+            CScore.Text = newCharacter.charisma.ToString();
+            IScore.Text = newCharacter.inteligence.ToString();
+            WScore.Text = newCharacter.wisdom.ToString();
+            ChScore.Text = newCharacter.charisma.ToString();
+
+            SModifier.Text = newCharacter.Modifier(newCharacter.strength).ToString();
+            DModifier.Text = newCharacter.Modifier(newCharacter.dexterity).ToString();
+            CModifier.Text = newCharacter.Modifier(newCharacter.constitution).ToString();
+            IModifier.Text = newCharacter.Modifier(newCharacter.inteligence).ToString();
+            WModifier.Text = newCharacter.Modifier(newCharacter.wisdom).ToString();
+            ChModifier.Text = newCharacter.Modifier(newCharacter.charisma).ToString();
+
             /*
             var task = Task.Run(async () =>
             {
