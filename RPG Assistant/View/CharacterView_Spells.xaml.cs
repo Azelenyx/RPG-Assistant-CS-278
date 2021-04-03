@@ -15,6 +15,9 @@ namespace RPG_Assistant.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CharacterView_Spells : ContentPage
     {
+
+        public List<string> spells = new List<string>();
+
         public CharacterView_Spells()
         {
             InitializeComponent();
@@ -29,8 +32,43 @@ namespace RPG_Assistant.View
 
         }
 
+        public void AddItem(string itemName)
+        {
+
+            spells.Add(itemName);
+
+        }
+
+        public void RemoveItem(int itemIndex)
+        {
+            spells.RemoveAt(itemIndex);
+        }
+
+        public void ShowInventory()
+        {
+
+            foreach (string spell in spells)
+            {
+
+                spellText.Text = spellText.Text + spell + "\n";
+                Console.Write(spell);
+            }
 
 
+        }
+
+        void AddSpellButtonClicked(System.Object sender, System.EventArgs e)
+        {
+
+            if (spellName.Text != null)
+            {
+                AddItem(spellName.Text);
+                spellName.Text = "";
+            }
+            spellText.Text = "";
+            ShowInventory();
+
+        }
 
 
 

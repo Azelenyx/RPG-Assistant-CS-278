@@ -22,9 +22,10 @@
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="60" />
-                    <ColumnDefinition Width="60" />
-                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
                 </Grid.ColumnDefinitions>
 
                 <Button
@@ -54,7 +55,39 @@
                     VerticalTextAlignment="Center"
                     />
 
+                <Label
+                    x:Name="spellText"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                     Grid.ColumnSpan="5"
+                    FontAttributes="Bold"
+                    FontSize="Subtitle"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    />
 
+                 <Editor
+                    x:Name="spellName"
+                    Grid.Row="8"
+                    Grid.ColumnSpan="4"
+                    HeightRequest="50"
+                    Placeholder="Enter Item Name"
+                    />
+
+                 <Button
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="Add Spell"
+                    Clicked="AddSpellButtonClicked"
+                    TextColor="White"
+                    BackgroundColor="SlateGray"
+                    FontSize="Title"
+                    CornerRadius="25"
+                    WidthRequest="400"
+                    HeightRequest="50"
+                    HorizontalOptions="Start"
+                    />
 
             </Grid>
         </ScrollView>

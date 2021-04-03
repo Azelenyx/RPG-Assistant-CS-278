@@ -15,6 +15,9 @@ namespace RPG_Assistant.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class CharacterView_Inventory : ContentPage
     {
+
+        public List<string> inventory = new List<string>();
+
         public CharacterView_Inventory()
         {
             InitializeComponent();
@@ -30,9 +33,42 @@ namespace RPG_Assistant.View
         }
 
 
+        public void AddItem(string itemName)
+        {
+
+            inventory.Add(itemName);
+
+        }
+
+        public void RemoveItem(int itemIndex)
+        {
+            inventory.RemoveAt(itemIndex);
+        }
+
+        public void ShowInventory()
+        {
+
+            foreach (string item in inventory)
+            {
+                
+                inventoryText.Text = inventoryText.Text + item + "\n";
+                Console.Write(item);
+            }
 
 
+        }
 
+        void AddItemButtonClicked(System.Object sender, System.EventArgs e)
+        {
 
+            if (itemName.Text != null)
+            {
+                AddItem(itemName.Text);
+                itemName.Text = "";
+            }
+            inventoryText.Text = "";
+            ShowInventory();
+
+        }
     }
 }

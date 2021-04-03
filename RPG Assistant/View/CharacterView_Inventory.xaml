@@ -17,14 +17,15 @@
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
                     <RowDefinition Height="Auto" />
-                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="50" />
                 </Grid.RowDefinitions>
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="*" />
-                    <ColumnDefinition Width="60" />
-                    <ColumnDefinition Width="60" />
-                    <ColumnDefinition Width="60" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
+                    <ColumnDefinition Width="50" />
                 </Grid.ColumnDefinitions>
 
                 <Button
@@ -46,7 +47,7 @@
                     x:Name="Inventory"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Grid.ColumnSpan="4"
+                    Grid.ColumnSpan="5"
                     FontAttributes="Bold"
                     FontSize="Title"
                     HorizontalTextAlignment="Center"
@@ -54,7 +55,39 @@
                     VerticalTextAlignment="Center"
                     />
 
+                 <Label
+                    x:Name="inventoryText"
+                    Grid.Row="3"
+                    Grid.Column="0"
+                     Grid.ColumnSpan="5"
+                    FontAttributes="Bold"
+                    FontSize="Subtitle"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"
+                    />
 
+                 <Editor
+                    x:Name="itemName"
+                    Grid.Row="8"
+                    Grid.ColumnSpan="4"
+                    HeightRequest="50"
+                    Placeholder="Enter Item Name"
+                    />
+
+                 <Button
+                    Grid.Row="9"
+                    Grid.Column="0"
+                    Grid.ColumnSpan="4"
+                    Text="Add Item"
+                    Clicked="AddItemButtonClicked"
+                    TextColor="White"
+                    BackgroundColor="SlateGray"
+                    FontSize="Title"
+                    CornerRadius="25"
+                    WidthRequest="400"
+                    HeightRequest="50"
+                    HorizontalOptions="Start"
+                    />
 
             </Grid>
         </ScrollView>
