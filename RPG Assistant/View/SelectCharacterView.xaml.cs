@@ -4,14 +4,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace RPG_Assistant.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SelectCharacterView : ContentPage
+    public partial class SelectCharacterView : ContentView
     {
         public ListView CharacterListView;
         CharacterDatabase characterDatabase;
@@ -24,19 +23,19 @@ namespace RPG_Assistant.View
             BindingContext = characterDatabase;
 
             CharacterListView = charactersListView;
-           
+            MainStackLayout.Children.Add(noCharactersLabel);
+
             var task = Task.Run(async () =>
             {
                 await RefreshCharactersAsync();
             });
-            
         }
 
         public async Task RefreshCharactersAsync()
         {
             characterDatabase.Characters = await CharacterDatabase.SelectCharacter();
-            charactersListView.IsVisible = characterDatabase.Characters.Count != 0;
-            noCharactersLabel.IsVisible = characterDatabase.Characters.Count == 0;
+            charactersListView.IsVisible = (characterDatabase.Characters.Count != 0);
+            noCharactersLabel.IsVisible = (characterDatabase.Characters.Count == 0);
         }
     }
 }

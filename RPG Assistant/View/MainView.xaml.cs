@@ -12,9 +12,13 @@ namespace RPG_Assistant.View
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainView : ContentPage
     {
+        CharacterSelectionPage selectionPage;
+        CharacterDeletionPage deletionPage;
         public MainView()
         {
             InitializeComponent();
+            selectionPage = new CharacterSelectionPage();
+            deletionPage = new CharacterDeletionPage();
         }
 
         public void Clicked_CreateCharacter(object sender, System.EventArgs e)
@@ -22,14 +26,15 @@ namespace RPG_Assistant.View
             Navigation.PushModalAsync(new CreateCharacterView_ANDROID());
         }
 
-        public void Clicked_SelectCharacter(object sender, System.EventArgs e)
+        public async void Clicked_SelectCharacter(object sender, System.EventArgs e)
         {
-            Navigation.PushModalAsync(new SelectCharacterView());
+            //Navigation.PushModalAsync(new SelectCharacterView());
+            await Navigation.PushModalAsync(selectionPage);
         }
 
-        public void Clicked_DeleteCharacter(object sender, System.EventArgs e)
+        public async void Clicked_DeleteCharacter(object sender, System.EventArgs e)
         {
-
+            await Navigation.PushModalAsync(deletionPage);
         }
     }
 }

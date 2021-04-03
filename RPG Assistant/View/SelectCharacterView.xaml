@@ -1,21 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
+<ContentView
     x:Class="RPG_Assistant.View.SelectCharacterView"
     xmlns="http://xamarin.com/schemas/2014/forms"
-    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:RPG_Assistant.View">
     <!--
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand"
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
     -->
-    <ContentPage.Content>
+    <ContentView.Content>
         <StackLayout x:Name="MainStackLayout" Padding="25">
             <!--  Character Search Bar  -->
-            <SearchBar Placeholder="Search by character name..." />
+            <SearchBar
+                x:Name="Search"
+                HorizontalOptions="FillAndExpand"
+                Placeholder="Search by character name"
+                SearchCommand="{Binding SearchCommand}"
+                SearchCommandParameter="{Binding Text, Source={x:Reference Search}}" />
             <!--  No Characters Label  -->
             <Label x:Name="noCharactersLabel" Text="You don't have any character." />
             <!--  Character List  -->
@@ -56,6 +55,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </StackLayout>
-    </ContentPage.Content>
+    </ContentView.Content>
 
-</ContentPage>
+</ContentView>
